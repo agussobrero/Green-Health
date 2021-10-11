@@ -1,0 +1,39 @@
+@import "../abstracts/variables";
+
+.footer{
+    background-color: #2B3440;
+    height: 300px;
+    color: white;
+
+    &__article{
+        padding: 30px;
+        font-size: 22px;
+        font-weight: bolder;
+
+        &__h3{
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+    }
+}
+
+.footer-col{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+    &__col{
+
+        &__h3{
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        &__ul{
+
+            &__li{
+                list-style: none;
+            }
+        }
+    }
+}

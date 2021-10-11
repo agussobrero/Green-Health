@@ -1,0 +1,114 @@
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
+
+
+.header{
+    @extend %header;
+
+    &__a{
+        @extend %nav-a;
+    }
+}
+
+.hero{
+    height: 500px;
+
+    &__shop{
+        @extend %section-hero;
+
+        &__div{
+            display: flex;
+            flex-direction: column;
+    
+            &__h2{
+                font-size: 25px;
+                font-family: $font-p;
+                align-self: left;
+            }
+        
+            &__p{
+                font-size: 20px
+            }
+        
+            &__span{
+                @extend %section-hero-span;
+            }
+        }
+        &__img{
+            @extend %section-hero-img;
+            margin-left: 5rem;
+    }
+    }
+
+}
+
+.div-productos{
+    height: 500px;
+    border: $border;
+
+    &__shop{
+        display: flex;
+        gap: 5rem;
+        padding: 25px;
+        height: 500px;
+        align-items: center;
+    
+        &__img{
+            width: 300px;
+            box-shadow: 3px 3px grey;
+            border-radius: 8px;
+        }
+    
+        &__p{
+            font-size: 20px;
+        }
+    
+        &__span{
+            font-size: 16px;
+            font-weight: 800;
+        }
+    }
+}
+
+.div-beneficios{
+    height: 500px;
+    border: $border;
+
+    &__shop{
+        display: flex;
+        gap: 5rem;
+        padding: 25px;
+        height: 500px;
+        align-items: center;
+    
+        &__img{
+            width: 300px;
+            box-shadow: 3px 3px grey;
+            border-radius: 8px;
+        }
+    
+        &__p{
+            font-size: 20px;
+        }
+    
+        &__span{
+            font-size: 16px;
+            font-weight: 800;
+        }
+    }
+}
+
+.footer{
+    @extend %footer;
+}
+
+.footer-col{
+    @extend %footer-col;
+
+    &__col{
+
+        &__ul{
+        padding-left: 0rem;
+        }
+    }
+}

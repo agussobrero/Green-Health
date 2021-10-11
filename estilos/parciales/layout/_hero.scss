@@ -1,0 +1,33 @@
+@import "../abstracts/variables";
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    height: 450px;
+    border: $border;
+
+    &__img{
+        width: 550px;
+        align-self: center;
+        box-shadow: 3px 3px grey;
+        border-radius: 8px;
+    }
+
+    &__p{
+        font-size: 25px;
+        font-family: $font-p;
+        align-self: center;
+
+        &__span{
+            background-color: #2B3440;
+            padding: 8px;
+            display: inline-block;
+            margin-top: 15px;
+            color: white;
+            border-radius: 4px;
+            box-shadow: 3px 3px grey;
+        }
+    }
+}

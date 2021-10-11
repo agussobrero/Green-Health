@@ -1,0 +1,93 @@
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
+
+
+.hero{
+    height: 500px;
+
+    &__review{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        height: 450px;
+        border: none;
+
+        &__div{
+            display: flex;
+            flex-direction: column;
+
+            &__h2{
+                @extend %section-hero-p;
+            }
+
+            &__p{
+                font-size: 20px
+            }
+        }
+
+        &__img{
+            width: 550px;
+            align-self: center;
+            box-shadow: 3px 3px grey;
+            border-radius: 8px;
+            margin-left: 5rem;
+
+            &__img{
+                height: 290px;
+            }
+        }
+    }
+
+}
+
+.review{
+    height: 55vh;
+    justify-self: center;
+    align-items: baseline;
+    padding-top: 3rem;
+    border-bottom: $border;
+
+    &__cont{
+        text-align: center;
+
+        &__img{
+            width: 50%;
+        }
+
+        &__p{
+        text-align: center;
+        width: 100%;
+        }
+    }
+}
+
+.review__testi{
+    height: 500px;
+    align-items: center;
+
+    &__cont{
+        justify-content: center;
+
+        &__img{
+            width: 800px;
+        }
+    }
+}
+
+.footer{
+    @extend %footer;
+}
+
+.footer-col{
+    @extend %footer-col;
+
+    &__col{
+
+        &__ul{
+        padding-left: 0rem;
+        }
+    }
+}
+
+

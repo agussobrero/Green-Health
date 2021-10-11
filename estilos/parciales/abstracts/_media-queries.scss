@@ -1,0 +1,355 @@
+@media only screen and (max-width: 320px){
+    
+    * {
+        text-align: center;
+    }
+
+    .div-header{
+        display: inline-block;
+        font-size: 14px;
+
+        h1{
+            font-size: 28px;
+            margin-bottom: 0.8rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .nav__list{
+        justify-content: center;
+    }
+
+    #grilla{
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 10px;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: 200px;
+        text-align: center;
+
+        &__img{
+            display: none;
+        }
+
+        &__p{
+            font-size: 22px;
+        }
+    }
+
+    .productos{
+
+        &__img{
+            display: none;
+        }
+        &__p{
+            font-size: 18px;
+        }
+    }
+
+    .beneficios{
+
+        &__img{
+            display: none;
+        }
+        &__p{
+            font-size: 18px;
+        }
+    }
+
+    .footer{
+    
+        &__article{
+            padding: 15px;
+    
+            &__h3{
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .footer-col{
+        justify-content: space-between;
+        padding: 15px;
+    
+        &__col{
+    
+            &__h3{
+                margin-bottom: 8px;
+                font-size: 18px;
+                text-align: center;
+            }
+    
+            &__ul{
+                padding: 0.1rem;
+                margin-bottom: 0.6rem;
+
+                &__li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 425px) {
+    body{
+        background-color: bisque;
+    }
+
+    .div-header{
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        gap: 0rem;
+        width: 100%;
+        padding: 5px;
+        height: 90px;
+    }
+
+    .hero{
+        padding: 5px;
+        height: 200px;
+    
+        &__img{
+            width: 200px;
+        }
+    
+        &__p{
+            font-size: 14px;
+    
+            &__span{
+                padding: 5px;
+                margin-top: 7px;
+            }
+        }
+    }
+    #grilla{
+        grid-template-rows: 70px 220px 220px 220px 0px; 
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        grid-template-areas: 
+        "header"
+        "hero"
+        "beneficios"
+        "productos"
+        "footer";
+    }
+
+    .beneficios{
+        gap: 1rem;
+        padding: 5px;
+        height: 230px;
+        background-color: bisque;
+    
+        &__img{
+            width: 170px;
+        }
+    
+        &__p{
+            font-size: 12px;
+    
+            &__span{
+                padding: 2px;
+                display: inline-block;
+                margin-top: 5px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .productos{
+        gap: 1rem;
+        padding: 5px;
+        height: 230px;
+        background-color: bisque;
+    
+        &__img{
+            width: 170px;
+        }
+    
+        &__p{
+            font-size: 12px;
+    
+            &__span{
+                padding: 2px;
+                display: inline-block;
+                margin-top: 5px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .footer{
+        background-color: bisque;
+        height: 120px;
+        color: #2B3440;
+    
+        &__article{
+            padding: 5px;
+    
+            &__h3{
+                margin-bottom: 8px;
+                font-size: 14px;
+            }
+        }
+    }
+    
+    .footer-col{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    
+        &__col{
+            justify-content: space-around;
+    
+            &__h3{
+                margin-bottom: 4px;
+                font-size: 12px;
+            }
+    
+            &__ul{
+    
+                &__li{
+                    list-style: none;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    body{
+        background-color: rgb(248, 206, 155);
+    }
+
+    .div-header{
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        gap: 0rem;
+        width: 100%;
+        padding: 20px;
+        height: 90px;
+    }
+
+    .hero{
+        padding: 20px;
+        height: 315px;
+    
+        &__img{
+            width: 300px;
+        }
+    
+        &__p{
+            font-size: 20px;
+    
+            &__span{
+                padding: 6px;
+                margin-top: 7px;
+            }
+        }
+    }
+    #grilla{
+        grid-template-rows: 70px 290px 220px 220px 0px; 
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
+        grid-template-areas: 
+        "header"
+        "hero"
+        "beneficios"
+        "productos"
+        "footer";
+    }
+
+    .beneficios{
+        gap: 1rem;
+        padding: 5px;
+        height: 230px;
+        background-color: bisque;
+        border: none;
+    
+        &__img{
+            width: 220px;
+        }
+    
+        &__p{
+            font-size: 18spx;
+    
+            &__span{
+                padding: 2px;
+                display: inline-block;
+                margin-top: 5px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .productos{
+        gap: 1rem;
+        padding: 5px;
+        height: 230px;
+        background-color: bisque;
+        border: none;
+    
+        &__img{
+            width: 220px;
+        }
+    
+        &__p{
+            font-size: 18spx;
+    
+            &__span{
+                padding: 2px;
+                display: inline-block;
+                margin-top: 5px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .footer{
+        background-color: bisque;
+        height: 120px;
+        color: #2B3440;
+    
+        &__article{
+            padding: 5px;
+    
+            &__h3{
+                margin-bottom: 8px;
+                font-size: 14px;
+            }
+        }
+    }
+    
+    .footer-col{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    
+        &__col{
+            justify-content: space-around;
+    
+            &__h3{
+                margin-bottom: 4px;
+                font-size: 12px;
+            }
+    
+            &__ul{
+    
+                &__li{
+                    list-style: none;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+

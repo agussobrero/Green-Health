@@ -1,0 +1,33 @@
+#grilla{
+    display: grid;
+    grid-template-rows: 70px 450px 320px 320px 150px; 
+    grid-template-columns: 50px 1fr 150px;
+    grid-row-gap: 50px;
+    height: 800px;
+    grid-template-areas: 
+    "header header header"
+    "hero hero hero"
+    "beneficios beneficios ."
+    ". productos productos"
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+}
+
+section#hero{
+    grid-area: hero;
+}
+
+section#productos{
+    grid-area: productos;
+}
+
+section#beneficios{
+    grid-area: beneficios;
+}
+
+footer{
+    grid-area: footer;
+} 

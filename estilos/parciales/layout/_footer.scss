@@ -1,9 +1,10 @@
 @import "../abstracts/variables";
 
+
 .footer{
-    background-color: #2B3440;
+    background-color: $obscuro;
     height: 300px;
-    color: white;
+    color: $verde-prin;
 
     &__article{
         padding: 30px;
@@ -12,7 +13,8 @@
 
         &__h3{
             margin-bottom: 8px;
-            font-size: 18px;
+            font-size: 26px;
+            color: $verde-prin;
         }
     }
 }
@@ -26,7 +28,7 @@
 
         &__h3{
             margin-bottom: 8px;
-            font-size: 18px;
+            font-size: 22px;
         }
 
         &__ul{

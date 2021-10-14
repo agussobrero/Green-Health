@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../base/colores";
 
 %header{
     display: flex;
@@ -19,40 +20,40 @@
 
 %nav-a{
     text-decoration: none;
-    color: #007A78;
+    color: $verde-prin;
 }
 
 %section-hero{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
+    padding: 25px;
     height: 450px;
-    border: none;
+    background-color: $verde-sec;
 }
 
 %section-hero-img{
     width: 550px;
     align-self: center;
-    box-shadow: 3px 3px grey;
+    box-shadow: 3px 3px $verde-prin;
     border-radius: 8px;
 }
 
 %section-hero-p{
     font-size: 25px;
     font-family: $font-p;
-    align-self: left;
+    align-self: center;
+    color: white;
 }
 
 %section-hero-span{
-    background-color: #2B3440;
-    font-size: 20px;
-    padding: 15px;
+    background-color: $verde-prin;
+    padding: 8px;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 15px;
     color: white;
     border-radius: 4px;
-    box-shadow: 3px 3px grey;
+    box-shadow: 3px 3px $verde-sec;
 }
 
 %flex-center{
@@ -62,9 +63,9 @@
 }
 
 %footer{
-    background-color: rgb(207, 205, 203);;
+    background-color: $obscuro;
     height: 300px;
-    color: black;
+    color: $verde-prin;
 
     &__article{
         padding: 30px;

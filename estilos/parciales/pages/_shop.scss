@@ -24,16 +24,18 @@
                 font-size: 25px;
                 font-family: $font-p;
                 align-self: left;
+                color: white;
             }
         
             &__p{
-                font-size: 20px
+                @extend %section-hero-p;
             }
         
             &__span{
                 @extend %section-hero-span;
             }
         }
+
         &__img{
             @extend %section-hero-img;
             margin-left: 5rem;
@@ -44,7 +46,7 @@
 
 .div-productos{
     height: 500px;
-    border: $border;
+    border: none;
 
     &__shop{
         display: flex;
@@ -61,18 +63,20 @@
     
         &__p{
             font-size: 20px;
+            font-family: $font-p;
         }
     
         &__span{
-            font-size: 16px;
+            font-size: 24px;
             font-weight: 800;
+            font-family: $font-p;
         }
     }
 }
 
 .div-beneficios{
     height: 500px;
-    border: $border;
+    border: none;
 
     &__shop{
         display: flex;
@@ -89,11 +93,13 @@
     
         &__p{
             font-size: 20px;
+            font-family: $font-p;
         }
     
         &__span{
-            font-size: 16px;
+            font-size: 24px;
             font-weight: 800;
+            font-family: $font-p;
         }
     }
 }

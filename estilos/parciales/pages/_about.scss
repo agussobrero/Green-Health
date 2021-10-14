@@ -6,31 +6,27 @@
     height: 500px;
 
     &__about{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px;
-        height: 450px;
-        border: none;
+        @extend %section-hero;
 
         &__div{
             display: flex;
             flex-direction: column;
 
             &__h2{
-                @extend %section-hero-p;
+                font-size: 25px;
+                font-family: $font-p;
+                align-self: left;
+                color: white;
+                margin-bottom: 2rem;
             }
 
             &__p{
-                font-size: 20px
+                @extend %section-hero-p;
             }
         }
 
         &__img{
-            width: 550px;
-            align-self: center;
-            box-shadow: 3px 3px grey;
-            border-radius: 8px;
+            @extend %section-hero-img;
             margin-left: 25rem;
         }
     }

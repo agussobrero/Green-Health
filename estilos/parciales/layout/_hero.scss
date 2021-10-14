@@ -6,12 +6,12 @@
     align-items: center;
     padding: 25px;
     height: 450px;
-    border: $border;
+    background-color: $verde-sec;
 
     &__img{
         width: 550px;
         align-self: center;
-        box-shadow: 3px 3px grey;
+        box-shadow: 3px 3px $verde-prin;
         border-radius: 8px;
     }
 
@@ -19,9 +19,10 @@
         font-size: 25px;
         font-family: $font-p;
         align-self: center;
+        color: white;
 
         &__span{
-            background-color: #2B3440;
+            background-color: $verde-prin;
             padding: 8px;
             display: inline-block;
             margin-top: 15px;

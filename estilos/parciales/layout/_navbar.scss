@@ -1,48 +1,52 @@
 @import "../abstracts/variables";
 @import "../abstracts/placeholders";
+@import "../base/colores";
+@import "../abstracts/responsive";
 
-.nav{
+.navbar-light .navbar-nav .nav-link{
+    color: $verde-prin;
+    font-family: $font-p;
+}
 
-    &__list{
-        list-style: none;
-        display: flex;
-        gap: 2rem;
-        &:hover{
-            background-color: aquamarine;
-        }
+.navbar-light .navbar-toggler{
 
-        &__a{
-            text-decoration: none;
-            color: #007A78;
+}
+
+.navbar-light .navbar-toggler-iconº{
+
+}
+
+.nav-icon{
+    height: 28px;
+    opacity: 0.7;
+    color: $verde-prin;
+}
+
+.mi-navbar{
+    background-color: $fondo-prin;
+
+    &__brand{
+        font-size: 32px !important;
+        color: $verde-prin !important;
+        font-family: $font-p !important;
+        
+        @include movil{
+            font-size: 22px;
+            color: $obscuro;
         }
     }
+
+    &__nav{
+
+        &__item{
+            font-size: 20px;
+            font-family: $font-p !important;
+            &:hover{
+                background-color: #FFFFFF;
+                border-radius: 25px;
+                transform: scale(1.1);
+                }
+            }
+        }
 }
 
-/* .navbar-brand{
-    text-decoration: blue;
-    background-color: blue;
-    font-size: 20px;
-    color: blueviolet;
-} */
-
-/* .navbar{
-    text-decoration: red;
-}
-
-.navbar-nav{
-    text-decoration: red;
-}
-
-#navbarNav{
-    color: red;
-}
-
-.nav-item{
-    text-decoration: rgb(247, 27, 27);
-    padding: 1rem;
-    margin: 1rem;
-    background-color: rgb(221, 243, 124);
-    &:hover{
-        background-color: blue;
-    }
-} */

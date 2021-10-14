@@ -1,11 +1,60 @@
 @import "../abstracts/variables";
 @import "../abstracts/placeholders";
+@import "../base/colores";
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    height: 450px;
+    background-color: $verde-sec;
+
+    @include movil{ 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+
+    &__img{
+        width: 550px;
+        align-self: center;
+        box-shadow: 3px 3px $verde-prin;
+        border-radius: 8px;
+
+        @include movil{ 
+            display: none;
+        }
+    }
+
+    &__p{
+        font-size: 25px;
+        font-family: $font-p;
+        align-self: center;
+        color: white;
+
+        &__span{
+            background-color: $verde-prin;
+            padding: 8px;
+            display: inline-block;
+            margin-top: 15px;
+            color: white;
+            border-radius: 4px;
+            box-shadow: 3px 3px $verde-sec;
+        }
+    }
+}
 
 #beneficios{
     height: 60vh;
-    background-color: #F2F2F2;
     justify-content: center;
     align-items: center;
+
+    @include movil{ 
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        }
 }
 
 .beneficios{
@@ -19,8 +68,11 @@
     &__img{
         width: 60%;
         align-self: center;
-        box-shadow: 3px 3px grey;
+        box-shadow: 3px 3px $verde-prin;
         border-radius: 8px;
+        @include movil{ 
+            display: none;
+        }
     }
 
     &__p{
@@ -42,13 +94,21 @@
     justify-items: left;
     padding: 25px;
     height: 400px;
-    background-color: #F2F2F2;
-    border-top: $border;
+    border-top: none;
+
+    @include movil{ 
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        }
 
     &__img{
         width: 36%;
-        box-shadow: 3px 3px grey;
+        box-shadow: 3px 3px $verde-prin;
         border-radius: 8px;
+        @include movil{ 
+            display: none;
+        }
     }
 
     &__p{
@@ -61,4 +121,23 @@
             font-size: 16px;
         }
     }
+}
+
+.footer{
+    @extend %footer;
+
+    @include movil{ 
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        }
+}
+
+.footer-col{
+    @extend %footer-col;
+
+    @include movil{ 
+        padding: 0rem;
+        
+        }
 }

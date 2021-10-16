@@ -45,6 +45,10 @@
     }
 }
 
+.div-hero1{
+    background-color: red;
+}
+
 #beneficios{
     height: 60vh;
     justify-content: center;
@@ -66,10 +70,11 @@
     border: none;
 
     &__img{
-        width: 60%;
+        width: 550px;
         align-self: center;
         box-shadow: 3px 3px $verde-prin;
         border-radius: 8px;
+        
         @include movil{ 
             display: none;
         }
@@ -103,7 +108,7 @@
         }
 
     &__img{
-        width: 36%;
+        width: 550px;
         box-shadow: 3px 3px $verde-prin;
         border-radius: 8px;
         @include movil{ 
@@ -124,7 +129,20 @@
 }
 
 .footer{
-    @extend %footer;
+    background-color: $obscuro;
+    height: 300px;
+    color: $verde-prin;
+
+    &__article{
+        padding: 30px;
+        font-size: 22px;
+        font-weight: bolder;
+
+        &__h3{
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+    }
 
     @include movil{ 
         flex-direction: column;
@@ -134,10 +152,27 @@
 }
 
 .footer-col{
-    @extend %footer-col;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+    &__col{
+
+        &__h3{
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        &__ul{
+            
+            &__li{
+                list-style: none;
+            }
+        }
+    }
 
     @include movil{ 
         padding: 0rem;
-        
+
         }
 }

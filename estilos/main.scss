@@ -3,10 +3,10 @@
 @import "./parciales/base/reset";
 @import "./parciales/abstracts/media-queries";
 @import "./parciales/base/colores";
-
+@import "./parciales/layout/header";
 @import "./parciales/layout/navbar";
-
-
+@import "./parciales/layout/grilla";
+@import "./parciales/layout/hero";
 @import "./parciales/layout/footer";
 @import "./parciales/pages/index";
 @import "./parciales/pages/shop";

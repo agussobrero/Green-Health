@@ -6,8 +6,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    height: 450px;
+    padding: 45px;
+    height: 50px;
     background-color: $verde-sec;
 
     @include movil{ 
@@ -17,10 +17,13 @@
     }
 
     &__img{
-        width: 550px;
+        width: 90%;
         align-self: center;
+        align-content: flex-end;
+        align-items: flex-end;
         box-shadow: 3px 3px $verde-prin;
         border-radius: 8px;
+        margin-left: 4rem;
 
         @include movil{ 
             display: none;
@@ -28,7 +31,7 @@
     }
 
     &__p{
-        font-size: 25px;
+        font-size: 4vh;
         font-family: $font-p;
         align-self: center;
         color: white;
@@ -41,12 +44,9 @@
             color: white;
             border-radius: 4px;
             box-shadow: 3px 3px $verde-sec;
+            cursor: pointer;
         }
     }
-}
-
-.div-hero1{
-    background-color: red;
 }
 
 #beneficios{
@@ -65,15 +65,16 @@
     display: flex;
     gap: 2rem;
     align-items: center;
-    padding: 25px;
+    padding: 50px;
     height: 450px;
     border: none;
 
     &__img{
-        width: 550px;
+        width: 70%;
         align-self: center;
         box-shadow: 3px 3px $verde-prin;
         border-radius: 8px;
+        padding-left: 0.5rem;
         
         @include movil{ 
             display: none;
@@ -81,13 +82,14 @@
     }
 
     &__p{
-        font-size: 20px;
+        font-size: 4vh;
+        padding-left: 4rem;
 
         &__span{
             padding: 2px;
             display: inline-block;
             margin-top: 5px;
-            font-size: 16px;
+            font-size: 3vh;
         }
     }
 }
@@ -97,7 +99,7 @@
     gap: 2rem;
     align-items: center;
     justify-items: left;
-    padding: 25px;
+    padding: 45px;
     height: 400px;
     border-top: none;
 
@@ -108,22 +110,25 @@
         }
 
     &__img{
-        width: 550px;
+        width: 70%;
         box-shadow: 3px 3px $verde-prin;
         border-radius: 8px;
+        margin-left: 4rem;
+
         @include movil{ 
             display: none;
         }
     }
 
     &__p{
-        font-size: 20px;
+        font-size: 4vh;
+        padding-left: 1rem;
 
         &__span{
             padding: 2px;
             display: inline-block;
             margin-top: 5px;
-            font-size: 16px;
+            font-size: 3vh;
         }
     }
 }

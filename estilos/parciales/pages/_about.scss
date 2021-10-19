@@ -1,52 +1,77 @@
 @import "../abstracts/variables";
 @import "../abstracts/placeholders";
+@import "../base/colores";
 
-
-.hero{
+.hero-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
     height: 500px;
+    background-color: $verde-sec;
 
-    &__about{
-        @extend %section-hero;
+    &__div{
+        display: flex;
+        flex-direction: column;
 
-        &__div{
-            display: flex;
-            flex-direction: column;
-
-            &__h2{
-                font-size: 25px;
-                font-family: $font-p;
-                align-self: left;
-                color: white;
-                margin-bottom: 2rem;
-            }
-
-            &__p{
-                @extend %section-hero-p;
-            }
+        &__h2{
+            color: white;
         }
 
-        &__img{
-            @extend %section-hero-img;
-            margin-left: 25rem;
+        &__p{
+            font-size: 4vh;
+            font-family: $font-p;
+            color: white;
         }
     }
 
+    &__img{
+
+        &__img{
+            width: 90%;
+            align-self: center;
+            align-content: flex-end;
+            align-items: flex-end;
+            box-shadow: 3px 3px $verde-prin;
+            border-radius: 8px;
+            margin-left: 4rem;
+            }
+        }
 }
 
 .about{
-    height: 700px;
-
-    &__h2{
-        margin-top: 70px;
-    }
-
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
     &__cont{
-        align-self: center;
-
+        width: 65%;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 120px;
+        
+        
         &__p{
-        text-align: center;
-        width: 100%;
+            text-align: center;
+            width: 100%;
+            
+        }
+        &__h2{
+            color: $verde-prin;
+            display: flex;
+            justify-content: center;
+        }
 
+        &__carousel{
+            width: 35%;
+            height: 45vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
@@ -59,6 +84,7 @@
         display: flex;
         justify-content: center;
         height: 450px;
+        padding: 25px;
 
         &__text{
             align-self: center;

@@ -1,52 +1,34 @@
 @import "../abstracts/variables";
 @import "../base/colores";
 
-%header{
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    height: 120px;
-    color: #007A78;
-    font-size: 18px;
-    gap: 34rem;
-}
 
-%nav-list{
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-
-%nav-a{
-    text-decoration: none;
-    color: $verde-prin;
-}
-
-%section-hero{
+%section-hero-index{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    height: 450px;
+    padding: 45px;
+    height: 50px;
     background-color: $verde-sec;
 }
 
-%section-hero-img{
-    width: 550px;
+%section-hero-img-index{
+    width: 90%;
     align-self: center;
-    box-shadow: 3px 3px $fondo-prin;
+    align-content: flex-end;
+    align-items: flex-end;
+    box-shadow: 3px 3px $verde-prin;
     border-radius: 8px;
+    margin-left: 4rem;
 }
 
-%section-hero-p{
-    font-size: 25px;
+%section-hero-p-index{
+    font-size: 4vh;
     font-family: $font-p;
     align-self: center;
     color: white;
 }
 
-%section-hero-span{
+%section-hero-span-index{
     background-color: $verde-prin;
     padding: 8px;
     display: inline-block;
@@ -54,6 +36,7 @@
     color: white;
     border-radius: 4px;
     box-shadow: 3px 3px $verde-sec;
+    cursor: pointer;
 }
 
 %flex-center{

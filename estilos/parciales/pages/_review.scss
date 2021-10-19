@@ -1,39 +1,42 @@
 @import "../abstracts/variables";
 @import "../abstracts/placeholders";
+@import "../base/colores";
 
-
-.hero{
+.hero-review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
     height: 500px;
+    background-color: $verde-sec;
 
-    &__review{
-        @extend %section-hero;
+    &__div{
+        display: flex;
+        flex-direction: column;
 
-        &__div{
-            display: flex;
-            flex-direction: column;
-
-            &__h2{
-                font-size: 25px;
-                font-family: $font-p;
-                align-self: left;
-                color: white;
-                margin-bottom: 2rem;
+        &__h2{
+            color: white;
             }
 
-            &__p{
-                @extend %section-hero-p;
+        &__p{
+            font-size: 4vh;
+            font-family: $font-p;
+            color: white;
             }
         }
+
+    &__img{
 
         &__img{
-            @extend %section-hero-img;
-
-            &__img{
-                height: 290px;
+            width: 90%;
+            align-self: center;
+            align-content: flex-end;
+            align-items: flex-end;
+            box-shadow: 3px 3px $verde-prin;
+            border-radius: 8px;
+            margin-left: 4rem;
             }
         }
-    }
-
 }
 
 .review{

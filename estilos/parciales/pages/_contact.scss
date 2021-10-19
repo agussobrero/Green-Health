@@ -1,5 +1,6 @@
 @import "../abstracts/variables";
 @import "../abstracts/placeholders";
+@import "../base/colores";
 
 .footer-up{
     border-top: none;
@@ -22,9 +23,10 @@
 }
 
 .footer-mid{
-    background-color: $obscuro;
+    background-color: $fondo-sec;
     border-top: none;
     padding-top: 1.5rem;
+    padding: 25px;
     height: 75vh;
     width: 100%;
 
@@ -36,12 +38,16 @@
     }
 
     &__cont{
-
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         &__row{
-            align-items: center;
 
             &__col{
                 border-right: none;
+
             }
         }
     }

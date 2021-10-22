@@ -44,6 +44,9 @@
             border-radius: 4px;
             box-shadow: 3px 3px $verde-sec;
             cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 }

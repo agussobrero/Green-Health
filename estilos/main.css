@@ -616,6 +616,11 @@ body {
   cursor: pointer;
 }
 
+.hero__p__span:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 #beneficios {
   height: 60vh;
   -webkit-box-pack: center;
@@ -863,6 +868,11 @@ body {
   cursor: pointer;
 }
 
+.hero-shop__text__span:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .hero-shop__img__img {
   width: 90%;
   -ms-flex-item-align: center;
@@ -877,6 +887,55 @@ body {
           box-shadow: 3px 3px #668C4A;
   border-radius: 8px;
   margin-left: 4rem;
+}
+
+.div-cards {
+  height: 80vh;
+  background-color: white;
+}
+
+.div-cards__h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.mis-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 55vh;
+  margin: 2.5rem 0rem;
+}
+
+.mis-cards__body {
+  background-color: white !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.mis-cards__text {
+  text-align: center;
+}
+
+.mis-cards__btn {
+  background-color: #668C4A;
+  border: #A6BE4B;
+}
+
+.mis-cards__btn:hover {
+  background-color: #A6BE4B !important;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .div-productos {
@@ -1096,17 +1155,8 @@ body {
 }
 
 .about__cont__carousel {
-  width: 35%;
+  width: 50%;
   height: 45vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .about-benefits {
@@ -1226,28 +1276,67 @@ body {
   margin-left: 4rem;
 }
 
-.review {
-  height: 55vh;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding-top: 3rem;
-  border-bottom: none;
+.div-cards-review {
+  height: 62vh;
+  background-color: white;
 }
 
-.review__cont {
+.div-cards-review__h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.card1 {
+  border: solid #F2C43D 1px;
+}
+
+.mis-cards-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 45vh;
+  margin: 4rem 0rem;
+}
+
+.mis-cards-review__body {
+  background-color: white !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.mis-cards-review__p {
   text-align: center;
 }
 
-.review__cont__img {
-  width: 50%;
-}
-
-.review__cont__p {
-  text-align: center;
+.review-testi {
+  height: 70vh;
+  background: url(../images/review-people1-redi.jpeg) no-repeat center;
   width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 6rem 0rem;
+}
+
+.review-testi__cont {
+  height: 80vh;
+}
+
+.review-testi__cont__text {
+  position: relative;
+}
+
+.review-testi__cont__text__p {
+  text-align: left;
+  width: 35%;
+  position: absolute;
+  margin-top: 10rem;
+  margin-left: 3rem;
+  color: white;
+  line-height: 1.6rem;
 }
 
 .review__testi {

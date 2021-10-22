@@ -39,26 +39,73 @@
         }
 }
 
-.review{
-    height: 55vh;
-    justify-self: center;
-    align-items: baseline;
-    padding-top: 3rem;
-    border-bottom: none;
+.div-cards-review{
+    height: 62vh;
+    background-color: white;
 
-    &__cont{
+    &__h2{
         text-align: center;
-
-        &__img{
-            width: 50%;
-        }
-
-        &__p{
-        text-align: center;
-        width: 100%;
-        }
+        margin-top: 2rem;
     }
 }
+
+.card1{
+    border: solid $fondo-sec 1px;
+}
+
+.mis-cards-review{
+    display: flex;
+    justify-content: space-around;
+    height: 45vh;
+    margin: 4rem 0rem;
+    
+
+    &__body{
+        background-color: white!important;
+        align-items: center !important;
+    }
+
+    &__p{
+        text-align: center;
+    }
+}
+
+.review-testi{
+    height: 70vh;
+    background: url(../images/review-people1-redi.jpeg) no-repeat center;
+    width: 100%;
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 6rem 0rem;
+
+    &__cont{
+        height: 80vh;
+
+        &__text{
+            position: relative;
+    
+            &__p{
+                text-align: left;
+                width: 35%;
+                position: absolute;
+                margin-top: 10rem;
+                margin-left: 3rem;
+                color: white;
+                line-height: 1.6rem;
+
+            }
+    }
+
+    }
+}
+
+
+
+
+
+
+
 
 .review__testi{
     height: 500px;

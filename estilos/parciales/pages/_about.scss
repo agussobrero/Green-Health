@@ -2,49 +2,83 @@
 @import "../abstracts/placeholders";
 @import "../base/colores";
 
+
 .hero-about{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
     height: 500px;
-    background-color: $verde-sec;
+    position: relative;
 
-    &__div{
+    @include movil{
+        text-align: center;
         display: flex;
-        flex-direction: column;
-
-        &__h2{
-            color: white;
-        }
-
-        &__p{
-            font-size: 4vh;
-            font-family: $font-p;
-            color: white;
-        }
+        text-align: center;
+        height: 30vh;
+        padding: 0px;
     }
+    
+        &__text{
+        background: url(../images/image-1.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-    &__img{
+        @include movil{
+            background: none;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            height: 50vh;
+            padding: 35px;
+        }
 
-        &__img{
-            width: 90%;
-            align-self: center;
-            align-content: flex-end;
-            align-items: flex-end;
-            box-shadow: 3px 3px $verde-prin;
-            border-radius: 8px;
-            margin-left: 4rem;
+        &__cont{
+            width: 75vh;
+            height: 40%;
+            text-align: center;
+            position: absolute;
+            top: 110%;
+            right: 42.5%;
+            margin: -10rem;
+            background-color: white;
+            padding: 1.2rem;
+            border-color: $fondo-sec solid 2px;
+
+            @include movil{
+                width: 50vh;
+                height: 120%;
+                transform: scale(0.8);
+                top: -4%;
+                right: 0%;
+                margin: 0rem;
+                padding: 1.8rem;
+            }
+
+            &__h2{
+                color: $verde-prin;  
+            }
+
+            &__p{
+                font-size: 26px;
+                color: $verde-prin;
             }
         }
+    }
 }
 
+
 .about{
+    margin-top: 3rem;
     height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    background-color: white;
+
+    @include movil{
+        height: 95vh;
+    }
     
     &__cont{
         width: 65%;
@@ -53,7 +87,11 @@
         flex-direction: column;
         justify-content: space-around;
         padding: 120px;
-        
+
+        @include movil{
+            padding: 2.2rem;
+            width: 100%;
+        }
         
         &__p{
             text-align: center;
@@ -64,6 +102,14 @@
             color: $verde-prin;
             display: flex;
             justify-content: center;
+
+            @include movil{
+                padding: 0rem;
+                width: 110%;
+                font-size: 3vh;
+                margin-right: 3rem;
+                justify-content: unset;
+            }
         }
 
         &__carousel{
@@ -77,16 +123,31 @@
     margin-top: 80px;
     justify-content: center;
 
+    @include movil{
+        margin: 0rem;
+    }
+
     &__div{
         display: flex;
         justify-content: center;
         height: 450px;
         padding: 25px;
 
+        @include movil{
+            padding: 2.4rem;
+        }
+
         &__text{
             align-self: center;
 
+            @include movil{
+                text-align: center;
+            }
+
             &__h2{
+                @include movil{
+                    margin-bottom: 1.2rem;
+                }
             }
             
             &__p{
@@ -96,21 +157,12 @@
     }
 }
 
-.footer{
-    @extend %footer;
-}
-
-.footer-col{
-    @extend %footer-col;
-
-    &__col{
-
-        &__ul{
-        padding-left: 0rem;
-        }
+/* MEDIA-QUERIES */
+@media only screen and (max-width: 320px){
+    .disapp{
+    display: none;
     }
 }
-
 
 
 

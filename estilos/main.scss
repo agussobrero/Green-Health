@@ -1,9 +1,10 @@
 
 @import "./parciales/abstracts/variables";
 @import "./parciales/base/reset";
-@import "./parciales/abstracts/media-queries";
+@import"./parciales/abstracts/placeholders";
 @import "./parciales/base/colores";
 @import "./parciales/layout/navbar";
+@import "./parciales/layout/footer";
 @import "./parciales/pages/index";
 @import "./parciales/pages/shop";
 @import "./parciales/pages/about";

@@ -8,17 +8,31 @@
     height: 80vh;
     width: 100%;
 
+    @include movil{
+        height: 45vh;
+    }
+
     &__h2{
         text-align: center;
         font-size: 60px;
         color: $verde-sec;
+
+        @include movil{
+            font-size: 5vh;
+        }
     }
 
     &__img{
         padding: 2rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         margin-left: 5.5rem;
         width: 85%;
+
+        @include movil{
+            padding: 0rem;
+            margin: 1rem 1.8rem;
+            right: 50%;
+        }
     }
 }
 
@@ -30,11 +44,24 @@
     height: 75vh;
     width: 100%;
 
+    @include movil{
+        padding: 0rem;
+        margin: 0rem;
+        height: 145vh;
+    }
+
     &__h2{
         text-align: center;
         font-size: 40px;
         padding-bottom: 2rem;
+        padding-top: 1rem;
         color: $verde-prin;
+
+        @include movil{
+            padding: 1.2rem 0.5rem;
+            margin-bottom: 16rem;
+            font-size: 4.5vh;
+        }
     }
 
     &__cont{
@@ -45,8 +72,16 @@
         
         &__row{
 
+            @include movil{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
             &__col{
                 border-right: none;
+                
+
 
             }
         }
@@ -61,6 +96,13 @@
     height: 40vh;
     width: 100%;
 
+    @include movil{
+        padding: 0rem;
+        margin: 0rem;
+        height: 15vh;
+        margin-top: 1rem;
+    }
+
     &__cont{
         align-items: center;
         border-bottom: none;
@@ -69,14 +111,27 @@
         &__div{
             align-items: center;
             padding-left: 11rem;
+
+            @include movil{
+                padding: 0rem;
+            }
             
             &__h3{
                 text-align: left;
                 font-size: 30px;
                 padding-bottom: 1rem;
+
+                @include movil{
+                    text-align: center;
+                    font-size: 4.5vh;
+                }
             }
 
             &__p{
+
+                @include movil{
+                    text-align: center;
+                }
             }
         }
     }
@@ -97,13 +152,28 @@
     width: 100%;
     margin-top: 20rem;
 
+    @include movil{
+        margin-top: 3rem;
+        height: 73vh;
+    }
+
     &__cont{
         align-items: center;
         padding: 1rem;
         padding-bottom: 4rem;
 
+        @include movil{
+            padding: 0rem;
+            margin: 0rem;
+            transform: scale(0.6);
+        }
+
         &__map{
             padding-left: 7rem;
+
+            @include movil{
+                padding: 0rem;
+            }
 
             &__map{
                 padding: 2rem;
@@ -111,53 +181,48 @@
                 margin-left: 5.5rem;
                 width: 85%;
                 align-items: center;
+
+                @include movil{
+                    padding: 0rem;
+                }
             }
         }
         
         &__div{
             align-items: center;
             padding-left: 11rem;
+
+            @include movil{
+                padding: 0rem;
+                margin-top: 1rem;
+            }
             
             &__h3{
                 text-align: left;
                 font-size: 30px;
                 padding-bottom: 1rem;
+
+                @include movil{
+                    text-align: center;
+                    font-size: 7.5vh;
+                }
             }
     
             &__p{
     
+                @include movil{
+                    text-align: center;
+                    font-size: 4vh;
+                }
             }
         }
     }
 }
 
-.footer-last{
-    margin-top: 0rem;
-    align-items: center;
-    height: 50vh;
-    background-color: $obscuro;
-
-    &__div{
-        display: flex;
-        justify-content: space-around;
-
-        &__col{
-        }
+/* MEDIA-QUERIES */
+@media only screen and (max-width: 320px){
+    .disapp{
+    display: none;
     }
 }
 
-.card{
-    background-color: $obscuro;
-}
-.card-body{
-    background-color: $obscuro;
-}
-
-.btn-footer{
-    background-color: $verde-prin;
-    padding: 8px;
-    display: inline-block;
-    margin-top: 15px;
-    color: white;
-    border-radius: 4px;
-}

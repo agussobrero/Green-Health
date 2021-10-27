@@ -3,25 +3,6 @@
 @import "../base/colores";
 @import "../abstracts/responsive";
 
-.navbar-light .navbar-nav .nav-link{
-    color: $verde-prin;
-    font-family: $font-p;
-}
-
-.navbar-light .navbar-toggler{
-
-}
-
-.navbar-light .navbar-toggler-iconº{
-
-}
-
-.nav-icon{
-    height: 28px;
-    opacity: 0.7;
-    color: $verde-prin;
-}
-
 .mi-navbar{
     background-color: $fondo-prin;
 
@@ -31,8 +12,7 @@
         font-family: $font-p !important;
         
         @include movil{
-            font-size: 22px;
-            color: $obscuro;
+            font-size: 5vh !important;
         }
     }
 
@@ -42,11 +22,46 @@
             font-size: 20px;
             font-family: $font-p !important;
             &:hover{
-                background-color: #FFFFFF;
+                background-color: $verde-sec;
                 border-radius: 25px;
                 transform: scale(1.1);
                 }
+
+            @include movil{
+                font-size: 2.5vh;
+                text-decoration: white;
+                transform: unset;
+                }
             }
         }
+}
+
+.nav-link:hover{
+    color: white !important;
+} 
+
+.navbar-light .navbar-nav .nav-link{
+    color: $verde-prin;
+    font-family: $font-p;
+
+    @include movil{
+        &:hover{
+            color: white !important;
+            border-radius: 25px;
+            transform: scale(1.1);
+            }
+        }
+}
+
+.nav-icon{
+    height: 40px;
+    opacity: 0.7;
+    filter: invert(50%) sepia(15%) saturate(1128%) hue-rotate(51deg) brightness(96%) contrast(90%);
+}
+
+.navbar-light .navbar-toggler{
+    color: $verde-prin;
+    border: none;
+
 }
 

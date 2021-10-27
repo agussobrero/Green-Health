@@ -1,41 +1,70 @@
 @import "../abstracts/variables";
+@import "../abstracts/placeholders";
+@import "../base/colores";
 
-
-.footer{
+.footer-last{
+    margin-top: 0rem;
+    align-items: center;
+    height: 50vh;
     background-color: $obscuro;
-    height: 300px;
-    color: $verde-prin;
 
-    &__article{
-        padding: 30px;
-        font-size: 22px;
-        font-weight: bolder;
+    @include movil{
+        align-items: center;
+        text-align: center;
+    }
 
-        &__h3{
-            margin-bottom: 8px;
-            font-size: 26px;
-            color: $verde-prin;
+    &__div{
+        display: flex;
+        justify-content: space-around;
+
+        &__col{
+
+            &__h4{
+                font-size: 2.8vh;
+                font-weight: bolder;
+
+                @include movil{
+                    font-size: 2.5vh;
+                }
+            }
+
+            &__ul{
+                list-style: none;
+                padding: 0rem;
+                font-size: 2.3vh;
+
+                @include movil{
+                    font-size: 2vh;
+                }
+            }
         }
     }
 }
 
-.footer-col{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
+.card{
+    background-color: $obscuro;
 
-    &__col{
+    @include movil{
+        transform:scale(0.9);
+    }
+}
+.card-body{
+    background-color: $obscuro;
 
-        &__h3{
-            margin-bottom: 8px;
-            font-size: 22px;
-        }
+    @include movil{
+        transform:scale(0.9);
+    }
+}
 
-        &__ul{
+.btn-footer{
+    background-color: $verde-prin;
+    padding: 8px;
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    border-radius: 4px;
 
-            &__li{
-                list-style: none;
-            }
-        }
+    @include movil{
+        transform:scale(0.9);
     }
 }

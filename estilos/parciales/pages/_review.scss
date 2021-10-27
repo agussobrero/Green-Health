@@ -10,12 +10,26 @@
     height: 500px;
     background-color: $verde-sec;
 
+    @include movil{ 
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        height: 50vh;
+        padding: 35px;
+    }
+
     &__div{
         display: flex;
         flex-direction: column;
 
         &__h2{
             color: white;
+
+            @include movil{ 
+                margin-bottom: 2rem;
+                font-size: 4vh;
+            }
             }
 
         &__p{
@@ -43,6 +57,11 @@
     height: 62vh;
     background-color: white;
 
+    @include movil{
+        height: 130vh;
+        margin-bottom: 5rem;
+    }
+
     &__h2{
         text-align: center;
         margin-top: 2rem;
@@ -51,6 +70,18 @@
 
 .card1{
     border: solid $fondo-sec 1px;
+
+    @include movil{
+        background-color: $verde-sec;
+    }
+}
+
+.card-img-top{
+    
+    @include movil{
+        transform: scale(0.7);
+        padding-top: 0.6rem;
+    }
 }
 
 .mis-cards-review{
@@ -58,7 +89,13 @@
     justify-content: space-around;
     height: 45vh;
     margin: 4rem 0rem;
-    
+
+    @include movil{
+        flex-direction: column;
+        transform: scale(0.9);
+        margin: 0rem;
+        justify-content: space-around;
+    }
 
     &__body{
         background-color: white!important;
@@ -82,6 +119,11 @@
     &__cont{
         height: 80vh;
 
+    @include movil{
+        height: 30vh;
+        margin: 0rem;
+    }
+
         &__text{
             position: relative;
     
@@ -94,18 +136,15 @@
                 color: white;
                 line-height: 1.6rem;
 
+                @include movil{
+                    margin: 1rem;
+                }
+
             }
     }
 
     }
 }
-
-
-
-
-
-
-
 
 .review__testi{
     height: 500px;
@@ -120,19 +159,9 @@
     }
 }
 
-.footer{
-    @extend %footer;
-}
-
-.footer-col{
-    @extend %footer-col;
-
-    &__col{
-
-        &__ul{
-        padding-left: 0rem;
-        }
+@media only screen and (max-width: 320px){
+    .disapp{
+    display: none;
     }
 }
-
 

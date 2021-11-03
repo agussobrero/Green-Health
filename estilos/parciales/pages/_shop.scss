@@ -2,29 +2,49 @@
 @import "../abstracts/placeholders";
 @import "../base/colores";
 
+.back-hero-shop{
+    background: linear-gradient(-45deg, $verde-prin, $verde-sec, $fondo-sec, $fondo-prin);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .hero-shop{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px;
     height: 500px;
-    background-color: $verde-sec;
 
     @include movil{ 
         flex-direction: column;
         justify-content: center;
         align-content: center;
         text-align: center;
-        height: 57vh;
+        height: 47vh;
         padding: 0px;
     }
 
     &__text{
 
-
         @include movil{ 
             transform: scale(0.9);
         }
+
+        @include tablet{
+            transform: scale(0.9);
+            }
 
         &__h2{
             color: white;
@@ -48,16 +68,21 @@
         margin-top: 15px;
         color: white;
         border-radius: 4px;
-        box-shadow: 3px 3px $verde-sec;
         cursor: pointer;
         &:hover{
-            transform: scale(1.1);
+            border: 2px solid #104F55;
+            background-color: rgba(365,365,365,0.5);
+            cursor: pointer;
+            color: #104F55;
+            opacity: .8;
+            transition: .3s;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         }
 
         @include movil{ 
         padding-top: 6px;
-        }
-    }  
+            }       
+        }  
     }
 
     &__img{
@@ -73,7 +98,13 @@
             
             @include movil{ 
                 display: none;
-            }
+                }
+
+            @include tablet{
+                margin: 0rem;
+                padding: 0rem;
+                width: 100%;
+                }
         }
     }
 }
@@ -83,8 +114,14 @@
     background-color: white;
 
     @include movil{ 
-        height: 195vh;
-    }
+        margin-top: 0rem;
+        height: 190vh;
+        margin-bottom: 1rem;
+        }
+
+    @include tablet{
+        height: 75vh;
+        }
 
     &__h2{
         text-align: center;
@@ -96,20 +133,32 @@
 .mis-cards{
     display: flex;
     justify-content: space-around;
-    height: 55vh;
+    height: 58vh;
     margin: 2.5rem 0rem;
 
     @include movil{ 
         flex-direction: column;
         align-items: center;
-        margin-top: 0rem;
+        margin-top: 22rem;
+        margin-bottom: 22rem;
     }
 
+    @include tablet{
+        transform: scale(0.9);
+        height: 60vh;
+        margin: 0rem;
+        }
+
     &__mis-card{
+        position: relative;
 
         @include movil{
             background-color: $fondo-sec;
         }
+
+        @include tablet{
+            margin: 0.6rem;
+            }
     }
 
     &__body{
@@ -138,6 +187,38 @@
     @include movil{
         background-color: $fondo-sec;
     }
+}
+
+.mis-cards__mis-card{
+    position: relative;
+
+    &__p{
+        position: absolute;
+        color: white;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 5rem;
+        font-size: 3.2vh;
+        font-weight: bolder;
+        -webkit-transition: all 500ms ease-in-out;
+        opacity: 0;
+        transition: transform opacity 1.5s;
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    &__img-shop{
+        -webkit-transition: all 500ms ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+            border-radius: 5%;
+            -webkit-transition: opacity 0.5s;
+            opacity: 0.9;
+            }
+        }
 }
 
 .div-productos{
@@ -169,7 +250,13 @@
 
             @include movil{ 
                 display: none;
-            }
+                }
+
+            @include tablet{
+                margin: 0rem;
+                padding: 0rem;
+                width: 100%;
+                }
         }
     
         &__p{
@@ -194,6 +281,10 @@
                 margin-bottom: 1rem;
                 margin-top: 1rem;
             }
+
+            @include tablet{
+                padding: 0rem;
+                }
         }
     }
 }
@@ -228,7 +319,13 @@
 
             @include movil{ 
                 display: none;
-            }
+                }
+
+            @include tablet{
+                margin: 0rem;
+                padding: 0rem;
+                width: 100%;
+                }
         }
     
         &__p{
@@ -245,6 +342,7 @@
             display: inline-block;
             margin-top: 5px;
             font-size: 3.2vh;
+            color: $verde-prin;
 
             @include movil{ 
                 text-align: center;
@@ -252,6 +350,10 @@
                 margin-bottom: 1rem;
                 color: $verde-prin;
             }
+
+            @include tablet{
+                padding: 0rem;
+                }
         }
     }
 }
@@ -259,13 +361,19 @@
 .footer-last{
     
     @include movil{
-        height: 55vh;
+        height: 65vh;
     }
 }
 
 
 @media only screen and (max-width: 320px){
     .disapp{
+    display: none;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px){
+    .disapp1{
     display: none;
     }
 }

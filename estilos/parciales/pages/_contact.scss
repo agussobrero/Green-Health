@@ -7,9 +7,14 @@
     padding-top: 1.5rem;
     height: 80vh;
     width: 100%;
+    margin-bottom: 1rem;
 
     @include movil{
         height: 45vh;
+    }
+
+    @include tablet{
+        height: 60vh;
     }
 
     &__h2{
@@ -20,18 +25,26 @@
         @include movil{
             font-size: 5vh;
         }
+
+        @include tablet{
+            font-size: 7vh;
+        }
     }
 
     &__img{
         padding: 2rem;
         margin-top: 2rem;
-        margin-left: 5.5rem;
+        margin-left: 7.5rem;
         width: 85%;
 
         @include movil{
             padding: 0rem;
             margin: 1rem 1.8rem;
             right: 50%;
+        }
+
+        @include tablet{
+            margin-left: 4rem;
         }
     }
 }
@@ -47,7 +60,12 @@
     @include movil{
         padding: 0rem;
         margin: 0rem;
-        height: 145vh;
+        height: 155vh;
+        width: auto;
+    }
+
+    @include tablet{
+        height: 90vh;
     }
 
     &__h2{
@@ -59,8 +77,12 @@
 
         @include movil{
             padding: 1.2rem 0.5rem;
-            margin-bottom: 16rem;
+            margin-bottom: 18rem;
             font-size: 4.5vh;
+        }
+
+        @include tablet{
+            margin-bottom: 3rem;
         }
     }
 
@@ -88,7 +110,6 @@
     }
 }
 
-
 .footer-down{
     border-top: none;
     padding-top: 1rem;
@@ -99,7 +120,14 @@
     @include movil{
         padding: 0rem;
         margin: 0rem;
-        height: 15vh;
+        height: 40vh;
+        margin-top: 1rem;
+    }
+
+    @include tablet{
+        padding: 0rem;
+        margin: 0rem;
+        height: 70vh;
         margin-top: 1rem;
     }
 
@@ -108,12 +136,21 @@
         border-bottom: none;
         padding: 1rem;
 
+        @include movil{
+            width: auto;
+        }
+
         &__div{
             align-items: center;
             padding-left: 11rem;
 
             @include movil{
                 padding: 0rem;
+                align-self: center;
+            }
+
+            @include tablet{
+                padding: 5rem 3rem;
             }
             
             &__h3{
@@ -128,9 +165,16 @@
             }
 
             &__p{
+                padding-right: 12rem;
 
                 @include movil{
                     text-align: center;
+                    padding: 0rem;
+                }
+
+                @include tablet{
+                    padding: 0rem;
+                    margin-right: 2rem;
                 }
             }
         }
@@ -142,6 +186,12 @@
             padding: 2rem;
             margin-left: 5.5rem;
             width: 60%;
+
+            @include tablet{
+                padding: 0rem;
+                margin: 0rem;
+                width: 90%;
+            }
         }
     }
 }
@@ -152,49 +202,65 @@
     width: 100%;
     margin-top: 20rem;
 
+
     @include movil{
         margin-top: 3rem;
-        height: 73vh;
+        height: 53vh;
+        padding: 0rem;
+    }
+
+    @include tablet{
+        padding: 0rem;
+        margin: 0rem;
+        height: 60vh;
+        margin-top: 1rem;
     }
 
     &__cont{
         align-items: center;
         padding: 1rem;
         padding-bottom: 4rem;
+        width: 100%;
 
         @include movil{
             padding: 0rem;
             margin: 0rem;
             transform: scale(0.6);
+
+            @include tablet{
+                padding-left: 25rem;
+            }
         }
 
         &__map{
-            padding-left: 7rem;
+            padding-left: 9rem;
 
             @include movil{
                 padding: 0rem;
             }
 
-            &__map{
-                padding: 2rem;
-                margin-top: 1rem;
-                margin-left: 5.5rem;
-                width: 85%;
-                align-items: center;
-
-                @include movil{
-                    padding: 0rem;
-                }
+            @include tablet{
+                transform: scale(0.7);
+                padding-left: 0rem;
+                padding-right: 1rem;
             }
         }
         
         &__div{
             align-items: center;
             padding-left: 11rem;
+            margin-left: 8rem;
 
             @include movil{
                 padding: 0rem;
-                margin-top: 1rem;
+                margin-top: 0rem;
+                margin-left: 0rem;
+                height: 15vh;
+            }
+
+            @include tablet{
+                padding-left: 0rem;
+                margin-left: 0rem;
             }
             
             &__h3{
@@ -209,10 +275,17 @@
             }
     
             &__p{
-    
+                padding-right: 12rem;
+
                 @include movil{
                     text-align: center;
                     font-size: 4vh;
+                    padding: 0rem;
+                }
+
+                @include tablet{
+                    padding: 0rem;
+                    margin-right: 2rem;
                 }
             }
         }
@@ -222,6 +295,12 @@
 /* MEDIA-QUERIES */
 @media only screen and (max-width: 320px){
     .disapp{
+    display: none;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px){
+    .disapp1{
     display: none;
     }
 }
